@@ -32,7 +32,7 @@ account for non-alpha chars
 7) Search for a three letter word with multiple occurrences in a multiple word string
     Input: Bad, My bad, it's actually me who smells bad.
     Output: 2
-
+//Actually was handled in the above spec by accident, but whatev
 8) Search for a word in a string that contains the word attached to a non-alpha char
     Input: Do, What do I do?
     Output: 2

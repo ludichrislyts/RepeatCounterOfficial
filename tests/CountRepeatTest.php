@@ -108,5 +108,20 @@
 			//Assert
 			$this->assertEquals($answer, $result);
 		}
+		//spec 8 test
+		function test_handleNonAlpha()
+		{
+			//Arrange
+			$test = new CountRepeat;
+			$input_word = "Do";
+			$input_string = "What do I do?";
+
+			//Act
+			$result = $test->getWordCount($input_word, $input_string);
+			$answer = 2;
+
+			//Assert
+			$this->assertEquals($answer, $result);
+		}
 	}
 ?>
