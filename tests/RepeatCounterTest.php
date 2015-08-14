@@ -129,11 +129,13 @@
 			//Arrange
 			$test = new RepeatCounter;
 			$input_word = "The";
-			$input_string = "The Good, The Bad, The Ulgy, and a the, with a comma, just to be sure.";
+			$input_string = "The Good, The Bad, The Ulgy, and a the, with a comma, just to be sure.
+							Maybe add a few more lines that match the word to search. The function should
+							still find all the occurrences. Even if it includes *THE!";
 
 			//Act
 			$result = $test->countRepeats($input_word, $input_string);
-			$answer = 4;
+			$answer = 8;
 
 			//Assert
 			$this->assertEquals($answer, $result);
