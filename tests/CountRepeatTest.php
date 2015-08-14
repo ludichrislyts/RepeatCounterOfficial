@@ -63,5 +63,20 @@
 			//Assert
 			$this->assertEquals($answer, $result);
 		}
+		//spec 5 test
+		function test_twoLetterMultTimesInString()
+		{
+			//Arrange
+			$test = new CountRepeat;
+			$input_word = "If";
+			$input_string = "If I work hard, and if I am lucky, I should find work.";
+
+			//Act
+			$result = $test->getWordCount($input_word, $input_string);
+			$answer = 2;
+
+			//Assert
+			$this->assertEquals($answer, $result);
+		}
 	}
 ?>
