@@ -83,8 +83,23 @@
 		{
 			//Arrange
 			$test = new CountRepeat;
-			$input_word = "If";
-			$input_string = "If I work hard, and if I am lucky, I should find work.";
+			$input_word = "Dog";
+			$input_string = "That dog really stinks";
+
+			//Act
+			$result = $test->getWordCount($input_word, $input_string);
+			$answer = 1;
+
+			//Assert
+			$this->assertEquals($answer, $result);
+		}
+		//spec 7 test
+		function test_threeLetterMultTimesInString()
+		{
+			//Arrange
+			$test = new CountRepeat;
+			$input_word = "Bad";
+			$input_string = "My bad, it's actually me who smells bad.";
 
 			//Act
 			$result = $test->getWordCount($input_word, $input_string);
