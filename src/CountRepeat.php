@@ -4,6 +4,7 @@
 		function getWordCount($word, $string)
 		{
 			$count = 0;
+			strtolower($string);
 			$words_to_search = explode(" ", $string);
 			if (in_array($word, $words_to_search)){
 				++$count;
