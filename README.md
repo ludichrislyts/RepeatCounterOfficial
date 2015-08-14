@@ -7,18 +7,17 @@
 ## Description
 
 _The app takes a word from user input and finds how many times it occurs in a user supplied
-body of text. User inputs these values in the home page, and then is taken to a results page, where the number of times the word is found in the text is displayed. There is no error message for no found occurrences. Repeat Counter returns only exact matches. Partial matches are not included, however hyphenated words, or words separated by symbols will be returned. For example:
+body of text. User inputs these values in the home page, and then is taken to a results page, where the number of times the word is found in the text is displayed. There is no error message for no found occurrences. Repeat Counter returns only exact matches. Partial matches are not included, however hyphenated words, or words separated by symbols will be returned. For example:_
 
-Word: howdy
-Text: Howdy-Do, pardner!
+Word: howdy // Text: Howdy-Do, pardner!
 
-App will return 1 match_
+_App will return 1 match_
 
 ## Setup
 
 * _Clone into local repo_
-* _Run _composer install_ at terminal command line from the project folder_
-* _To run on a local machine, enter _php -S localhost:8000_ at the command line from the
+* _Run_ composer install _at terminal command line from the project folder_
+* _To run on a local machine, enter_ php -S localhost:8000 _at the command line from the
 project folder/web folder_
 
 
