@@ -1,16 +1,16 @@
 <?php
-	require_once __DIR__./../vendor/autoload.php";
-	require_once __DIR__./../src/Class.php";
+	require_once __DIR__'./../vendor/autoload.php';
+	require_once __DIR__'./../src/CountRepeats.php';
 
-	 = new Silex\Application();
+	 $app = new Silex\Application();
 
-	->register(new Silex\Provider\TwigServiceProvider(), array(
-		'twig.path' => __DIR__./../views'
+	$app->register(new Silex\Provider\TwigServiceProvider(), array(
+		'twig.path' => __DIR__'./../views'
 	));
 
-	->get("/", function() use (){
+	$app->get("/", function() use (){
 		return ['twig']->render('home.html.twig');
 	});
 
-	return 
+	return
 ?>
