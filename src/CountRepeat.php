@@ -4,10 +4,16 @@
 		function getWordCount($word, $string)
 		{
 			$count = 0;
-			strtolower($string);
-			$words_to_search = explode(" ", $string);
-			if (in_array($word, $words_to_search)){
-				++$count;
+			$lower_case_word = strtolower($word);
+			$lower_case_string = strtolower($string);
+			$words_to_search = explode(" ", $lower_case_string);
+			var_dump($words_to_search);
+			if (in_array($lower_case_word, $words_to_search)){
+				//count occurrences of words, create assoc word/freq array
+				$condensed_array = array_count_values($words_to_search);
+				var_dump($condensed_array);
+				//get frequency value from word
+				$count = $condensed_array[$lower_case_word];
 				return $count;
 			}
 		}
