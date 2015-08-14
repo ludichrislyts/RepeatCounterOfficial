@@ -4,18 +4,19 @@
 	class CountRepeatTest extends PHPUnit_Framework_TestCase
 	{
 		//first test
-		function()
+		function test_findSingleLetterSingleLetter()
 		{
 			//Arrange
-			 $test = new CountRepeat;
+			$test = new CountRepeat;
+			$input_word = "A";
+			$input_string = "A";
 
 			//Act
-			 $result = $test->getWordCount("");
-			 $answer = 1;
+			$result = $test->getWordCount($input_word, $input_string);
+			$answer = 1;
 
 			//Assert
-			->assertEquals(, );
-
+			$test->assertEquals($answer, $result);
 		}
 	}
 ?>
