@@ -16,7 +16,7 @@
 			$answer = 1;
 
 			//Assert
-			$test->assertEquals($answer, $result);
+			$this->assertEquals($answer, $result);
 		}
 	}
 ?>
