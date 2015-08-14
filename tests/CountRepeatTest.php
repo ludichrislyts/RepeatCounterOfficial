@@ -123,5 +123,20 @@
 			//Assert
 			$this->assertEquals($answer, $result);
 		}
+		//spec 9 test
+		function test_handleManyWithNonAlpha()
+		{
+			//Arrange
+			$test = new CountRepeat;
+			$input_word = "The";
+			$input_string = "The Good, The Bad, The Ulgy, and a the, with a comma, just to be sure.";
+
+			//Act
+			$result = $test->getWordCount($input_word, $input_string);
+			$answer = 4;
+
+			//Assert
+			$this->assertEquals($answer, $result);
+		}
 	}
 ?>

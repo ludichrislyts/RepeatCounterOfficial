@@ -36,3 +36,7 @@ account for non-alpha chars
 8) Search for a word in a string that contains the word attached to a non-alpha char
     Input: Do, What do I do?
     Output: 2
+
+9) Search for any word that occurs many times in a string
+    Input: The
+    Output: The Good, The Bad, The Ulgy, and a the, with a comma, just to be sure.
