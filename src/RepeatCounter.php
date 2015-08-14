@@ -1,7 +1,7 @@
 <?php
-	class CountRepeat
+	class RepeatCounter
 	{
-		function getWordCount($word, $string)
+		function countRepeats($word, $string)
 		{
 			$count = 0;
 			$lower_case_word = strtolower($word);
