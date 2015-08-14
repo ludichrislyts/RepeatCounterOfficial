@@ -1,0 +1,31 @@
+Count SPECS
+1) Search and return a single letter result from a single letter string
+    Input: A, A
+    Return: 1
+
+2) Search for two letter word from a single word string
+    Input: If, If
+    Output: 1
+
+2) Search for a single letter with a single occurrence from a multiple word string
+    Input: A, A dog barks
+    Output: 1
+
+3) Search for a two letter word with a single occurrence from a multiple word string
+    Input: If, What if the big quake happens?
+    Output: 1
+
+4) Search for a single letter word with multiple occurrences from a multiple word string
+    Input: I, I hope I get a job after class
+    Output: 2
+
+5) Search for a two letter word with multiple occurrences from a multiple word string
+    Input: If, If I work hard, and if I am lucky, I should find work
+    Output: 2
+
+6) Search for a three letter word with a single occurrence in a multiple word string
+    Input: Dog, That dog really stinks
+    Output: 1
+
+7) Search for a three letter word with multiple occurrences in a multiple word string
+    Input: Bad, My bad, it's actually me who smells bad.
